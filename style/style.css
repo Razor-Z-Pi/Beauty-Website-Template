@@ -108,7 +108,4 @@ header {
 
 .container-main {
     background-image: url("../image/fon-main.png");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
 }

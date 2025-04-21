@@ -6,6 +6,11 @@
 
 html,
 body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+
+
     width: 100%;
     height: 100%;
 
@@ -19,6 +24,16 @@ img {
 
 a {
     list-style: none;
+    text-decoration: none;
+
+    color: inherit;
+
+    transition: color ease-in 0.5s;
+}
+
+a:hover,
+a:focus {
+    color: #66C05D;
 }
 
 li {
@@ -35,11 +50,14 @@ p {
     height: 1992px;
 }
 
+/*Шапка и титульное меню сайта*/
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     width: 100%;
 }
@@ -48,6 +66,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     margin: 0;
     padding: 0;
@@ -63,7 +82,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    flex-wrap: wrap;
 
     width: 1350px;
 }
@@ -72,7 +91,14 @@ header {
     width: 600px;
     height: 50px;
 
+    font-size: 14px;
+    line-height: 100%;
+
     background-color: #EFEFEF;
+}
+
+.number-phone {
+    font-size: 16px;
 }
 
 .titleInform {
@@ -82,6 +108,14 @@ header {
 .Navigation {
     width: 800px;
     height: 80px;
+
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
 }
 
 .img-label {
@@ -89,14 +123,19 @@ header {
     justify-content: center;
     align-items: center;
 
+    font-size: 36px;
     font-weight: 700;
-    color: green;
+    line-height: 100%;
+    letter-spacing: 10%;
+
+    color: #66C05D;
 }
 
 .blockPhone {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     width: 350px;
 }
@@ -110,6 +149,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     width: 100%;
     height: 600px;
@@ -128,7 +168,6 @@ header {
 h1 {
     font-size: 48px;
     font-weight: 700;
-    font-family: "Roboto";
     line-height: 100%;
     color: #FFFFFF;
 
@@ -137,18 +176,19 @@ h1 {
 
 .title-main-text {
     font-size: 14px;
-    font-family: "Roboto";
     line-height: 20px;
     color: #FFFFFF;
 
     margin-bottom: 44px;
 }
 
+/*Секции с контентом*/
+
 .Content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     width: 100%;
     height: 730px;
@@ -161,9 +201,8 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
-    font-family: "Roboto";
     line-height: 100%;
     color: #000000;
 
@@ -174,6 +213,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .item-content {
@@ -181,11 +221,21 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-content p {
+    font-size: 14px;
+    line-height: 141%;
+    letter-spacing: 0%;
+    align-items: center;
 }
 
 .bead-item {
     width: 125px;
     height: 166px;
+
+    margin-bottom: 20px;
 }
 
 .buy-item {
@@ -195,14 +245,24 @@ h2 {
     border-radius: 50px;
 
     border: 0;
-    background-color: rgb(106, 201, 106);
+    background-color: #66C05D;
     color: white;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.buy-item:hover,
+.buy-item:focus {
+    border: 2px solid #66C05D;
+    background-color: transparent;
+    color: #000000;
 }
 
 .subscribe {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     width: 1110px;
 }
@@ -211,9 +271,10 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
     color: white;
-    background-color: rgb(106, 201, 106);
+    background-color: #66C05D;
 
     width: 540px;
     height: 212px;
@@ -229,9 +290,10 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    flex-wrap: wrap;
 
     color: white;
-    background-color: rgb(106, 201, 106);
+    background-color: #66C05D;
 
     width: 540px;
     height: 212px;
@@ -250,12 +312,20 @@ h2 {
     padding-bottom: 8px;
     padding-left: 35px;
     padding-right: 35px;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.btn-link-info:hover,
+.btn-link-info:focus {
+    background-color: white;
+    color: #000000;
 }
 
 .support-link {
     text-decoration: none;
 
-    border: 2px solid rgb(106, 201, 106);
+    border: 2px solid #66C05D;
     border-radius: 50px;
     color: #000000;
 
@@ -263,11 +333,23 @@ h2 {
     padding-bottom: 8px;
     padding-left: 35px;
     padding-right: 35px;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.support-link:hover,
+.support-link:focus {
+    background-color: #66C05D;
+    color: #000000;
 }
 
 .text-block-inf {
-   margin-bottom: 35px; 
+   margin-bottom: 35px;
+   line-height: 141%;
+   letter-spacing: 0%;
 }
+
+/*Подвал сайта*/
 
 footer {
      width: 100%;
@@ -278,6 +360,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
     height: 120px;
 }
@@ -294,4 +377,159 @@ footer {
     line-height: 100%;
 
     height: 64px;
+}
+
+.link-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 250px;
+}
+
+.logo-soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #66C05D;
+    border-radius: 100%;
+
+    width: 45px;
+    height: 45px;
+
+    transition: all ease-in 0.2s;
+}
+
+.logo-soc:hover,
+.logo-soc:focus {
+    border: 3px solid #66C05D;
+    width: 50px;
+    height: 50px;
+}
+
+.logo-soc > img {
+    width: 25px;
+    height: 18px;
+}
+
+.input-email {
+    border: 0;
+    border-radius: 50px;
+
+    width: 225px;
+    height: 35px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #C4C4C4;
+
+    padding-left: 25px;
+
+    transition: all ease-in-out 0.3s;
+}
+
+.input-email:focus,
+.input-email:hover {
+    outline-color: #66C05D;
+}
+
+/*Адаптив под устройства*/
+
+@media (max-width: 1400px) {
+    .container {
+        width: 100%;
+        height: 100%;
+    } 
+
+    .Navigation {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .subscribe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+        width: 100%;
+    }
+
+    .titleInform,
+    .content-left,
+    .box-content {
+        width: 100%;
+    }
+
+    .content-left {
+        margin-left: 20px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .container-items {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .subsc {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    h1,
+    .title-main-text {
+        color: #000000;
+    }
+}
+
+@media (max-width: 660px) {
+    footer {
+        padding-top: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titleInform {
+        justify-content: center;
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    .NavigateSupportContent,
+    .Navigation {
+        height: 100px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .item-content {
+        margin: 5px;
+    }
+
+    .subsc {
+        padding-left: 20px;
+    }
+
+    .container-items {
+        justify-content: center;
+    }
+
+    .message-img {
+        visibility: hidden;
+    }
 }
